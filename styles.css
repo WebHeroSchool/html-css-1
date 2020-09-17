@@ -1,3 +1,43 @@
 h1 {
   font-family: Roboto;
 }
+body {
+  margin: 0;
+}
+.header {
+  border: dashed 1px red;
+}
+.main-section {
+  border: dashed 1px red;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+  border: dashed 1px red;
+}
+.logo,
+.menu {
+  display: inline-block;
+  border: dashed 1px red;
+}
+.logo {
+  margin-right: 61%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 40px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu_item {
+  padding: 0 12px;
+  border: dashed 1px red;
+}
+.menu_item:last-child {
+  padding-right: 0;
+}
