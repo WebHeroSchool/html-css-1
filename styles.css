@@ -106,7 +106,7 @@ body {
 }
 @keyframes button {
   from {
-    width: 200px;
+    width: 201px;
     background-color: red;
   }
 
