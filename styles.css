@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center;
 }
-.menu_item {
+.menu__item {
   position: relative;
   margin-right: 26px;
   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
@@ -35,10 +35,10 @@ body {
   text-decoration: none;
   transition: opacity.5s;
 }
-.menu_item:last-child {
+.menu__item:last-child {
   margin-right: 0;
 }
-.menu_item_active::after {
+.menu__item_active::after {
   position: absolute;
   display: block;
   content: "";
@@ -46,7 +46,7 @@ body {
   height: 3px;
   background: #0056ec;
 }
-.menu_item:hover {
+.menu__item:hover {
   opacity: 0.5;
   background: #c6d4ec;
 }
@@ -59,7 +59,7 @@ body {
   height: 3px;
   background: #05204e;
 }
-.menu_item:hover::after {
+.menu__item:hover::after {
   position: absolute;
   left: 0;
   display: block;
@@ -74,21 +74,21 @@ body {
   background: top right no-repeat url("image/mainimg.svg");
 }
 
-.main_title {
+.main__title {
   margin: 0 0 40px 0;
   font: bold 50px/65px pt-serif, arial, helvetica, sans-serif;
 }
-.main_subtitle {
+.main__subtitle {
   margin: 0 0 41px 0;
   font: 18px/21px Roboto, arial, helvetica, sans-serif;
 }
-.main-button {
+.main__button {
   font: 14px/16px Roboto arial, helvetica, sans-serif;
 }
-.main_title-text_highlight {
+.main__title-text_highlight {
   background: #ecf3ff;
 }
-.main_button {
+.main__button {
   display: inline-block;
   font: 14px/16px Roboto, arial, helvetica, sans-serif;
   color: #fff;
@@ -98,7 +98,7 @@ body {
   border-radius: 4px;
   transition: opacity.5s;
 }
-.main_button:hover {
+.main__button:hover {
   opacity: 0.5;
   animation-duration: 6s;
   animation-iteration-count: infinite;
