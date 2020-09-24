@@ -39,6 +39,15 @@ body {
 .menu__item:last-child {
   margin-right: 0;
 }
+.menu__item::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #05204e;
+}
 .menu__item_active::after {
   position: absolute;
   display: block;
@@ -51,14 +60,7 @@ body {
   opacity: 0.5;
   background: #c6d4ec;
 }
-.menu__item::after {
-  position: absolute;
-  left: 0;
-  display: block;
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #05204e;
+
 }
 .menu__item:hover::after {
   position: absolute;
