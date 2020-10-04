@@ -4,6 +4,7 @@ h1 {
 body {
   margin: 0;
 }
+
 @media (max-width: 1366px) {
   .wrapper {
     margin: auto;
@@ -197,7 +198,11 @@ body {
   visibility: visible;
   left: 0;
 }
-
+@media (max-width: 1030px) {
+  .header {
+    margin-bottom: 28px;
+  }
+}
 @media (max-width: 768px) {
   .header {
     margin-bottom: 28px;
