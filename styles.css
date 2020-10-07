@@ -92,7 +92,7 @@ body {
 }
 .main__button {
   text-align: center;
-  min-width: 242px;
+  max-width: 250px;
   font: 18px/21px Roboto arial, helvetica, sans-serif;
 }
 .main__title-text_highlight {
