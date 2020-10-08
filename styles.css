@@ -260,11 +260,11 @@ body {
 @media (max-width: 768px) {
   .wrapper {
     width: 91%;
-    margin-right: 10px;
+    margin-right: 16px;
   }
   .header {
     margin-bottom: 14px;
-    padding: 21px 21px 21px 0px;
+    padding: 21px 21px 21px 5px;
     display: flex;
     justify-content: space-between;
   }
