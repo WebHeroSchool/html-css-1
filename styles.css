@@ -264,7 +264,7 @@ body {
   }
   .header {
     margin-bottom: 14px;
-    padding: 21px;
+    padding: 21px 21px 21px 0px;
     display: flex;
     justify-content: space-between;
   }
