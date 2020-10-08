@@ -238,6 +238,9 @@ body {
   .wrapper {
     width: 91%;
   }
+  .header {
+    padding: 40px 0px 40px 0px;
+  }
   .menu {
     padding-right: 0px;
   }
