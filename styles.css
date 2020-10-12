@@ -106,7 +106,7 @@ body {
   transition: opacity.5s;
 }
 .main__button:hover {
-  opacity: 0.5;
+  opacity: 1;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-name: button;
@@ -114,14 +114,14 @@ body {
 @keyframes button {
   from {
     width: 201px;
-    background-color: red;
+    background-color: #5193f4;
   }
   50% {
-    background-color: rebeccapurple;
+    background-color: #00ad9f;
   }
   to {
     width: 90%;
-    background-color: blue;
+    background-color: #7ee8d4;
   }
 }
 #menu__toggle {
