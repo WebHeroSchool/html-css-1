@@ -113,7 +113,7 @@ body {
 }
 @keyframes button {
   from {
-    width: 201px;
+    
     background-color: #5193f4;
   }
   50% {
