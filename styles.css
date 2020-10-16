@@ -113,14 +113,15 @@ body {
 }
 @keyframes button {
   from {
-    width: 201px;
+    width: 0%;
     background-color: #5193f4;
   }
   50% {
     background-color: #00ad9f;
   }
+
   to {
-    width: 90%;
+    width: 100%;
     background-color: #7ee8d4;
   }
 }
