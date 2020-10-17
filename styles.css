@@ -86,101 +86,31 @@ body {
   margin: 0 0 41px 0;
   font: 22px/26px Roboto, arial, helvetica, sans-serif;
 }
-.main__button {
-  text-align: center;
-  min-height: 29px;
-  min-width: 244px;
-  font: 18px/21px Roboto arial, helvetica, sans-serif;
-}
 .main__title-text_highlight {
   background: #ecf3ff;
 }
 .main__button {
+  text-align: center;
+  min-height: 29px;
+  min-width: 244px;
   display: inline-block;
   font: 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
-  padding: 14px 16px;
+  padding: 1em;
+  cursor: pointer;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity.5s;
 }
 .main__button:hover {
-  opacity: 0.5;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-name: button;
+  transition: all 2s ease;
+  background: #52d2bc;
+  padding-left: 6em;
+  padding-right: 6em;
 }
-@keyframes button {
-  from {
-    width: 201px;
-    background-color: red;
-  }
-  50% {
-    background-color: rebeccapurple;
-  }
-  to {
-    width: 90%;
-    background-color: blue;
-  }
-}
+
 #menu__toggle {
   opacity: 0;
-}
-.menu__btn {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 30px;
-  right: 25px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  background-color: #ffffff;
-  list-style: none;
-  text-align: center;
-}
-.menu__it {
-  display: block;
-  padding: 28px 26px;
-  color: #333;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: opacity.5s;
-}
-.menu__it:hover {
-  opacity: 0.5;
-  background-color: #cfd8dc;
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -196,6 +126,66 @@ body {
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  background-color: #ffffff;
+  list-style: none;
+  text-align: center;
+  transition-duration: 3s;
+}
+.menu__it {
+  display: block;
+  padding: 28px 26px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 25s;
+  transition: opacity 1s;
+}
+.menu__it:hover {
+  opacity: 0.5;
+  background-color: #cfd8dc;
 }
 @media (max-width: 1366px) {
   .wrapper {
